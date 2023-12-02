@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "priority": 1100,
+  "package": "dev.attackeight.attackeight_vh.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "attackeight_vh.refmap.json",
+  "mixins": [
+    "QuestTypeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
