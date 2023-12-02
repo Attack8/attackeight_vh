@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "flag": "sign_post",
+          "type": "supplementaries:flag"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "sign_post",
+        "ingredients": [
+          {
+            "item": "quark:azalea_sign"
+          }
+        ],
+        "result": {
+          "item": "supplementaries:quark/sign_post_azalea",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

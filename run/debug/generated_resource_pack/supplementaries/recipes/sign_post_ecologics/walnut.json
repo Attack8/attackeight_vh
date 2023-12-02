@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "flag": "sign_post",
+          "type": "supplementaries:flag"
+        },
+        {
+          "modid": "ecologics",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "sign_post",
+        "ingredients": [
+          {
+            "item": "ecologics:walnut_sign"
+          }
+        ],
+        "result": {
+          "item": "supplementaries:ecologics/sign_post_walnut",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "supplementaries:block/hanging_signs/ecologics/hanging_sign_walnut_loader",
+      "y": 270
+    },
+    "axis=z": {
+      "model": "supplementaries:block/hanging_signs/ecologics/hanging_sign_walnut_loader"
+    }
+  }
+}

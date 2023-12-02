@@ -1,0 +1,55 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "flag": "hanging_sign",
+          "type": "supplementaries:flag"
+        },
+        {
+          "modid": "ecologics",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "supplementaries:ecologics/hanging_sign_azalea"
+          ]
+        },
+        "criteria": {
+          "has_plank": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "player": null,
+              "items": [
+                {
+                  "items": [
+                    "ecologics:azalea_planks"
+                  ],
+                  "count": null,
+                  "durability": null,
+                  "nbt": null
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "player": null,
+              "recipe": "supplementaries:ecologics/hanging_sign_azalea"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_plank",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

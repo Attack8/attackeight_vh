@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "flag": "hanging_sign",
+          "type": "supplementaries:flag"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hanging_sign",
+        "pattern": [
+          "010",
+          "222",
+          "222"
+        ],
+        "key": {
+          "0": {
+            "item": "minecraft:iron_nugget"
+          },
+          "1": {
+            "item": "minecraft:stick"
+          },
+          "2": {
+            "item": "quark:azalea_planks"
+          }
+        },
+        "result": {
+          "item": "supplementaries:quark/hanging_sign_azalea",
+          "count": 2
+        }
+      }
+    }
+  ]
+}
