@@ -1,0 +1,6 @@
+Vault Hunters Quest Addon v0.1
+ - Add custom Quest type "jar_pickup"
+ - Add Animal Jar Quest
+ - Add Animal Pen Quest
+ - Add Other Vault Modifiers Quest
+ - Added to description of Looting Quest

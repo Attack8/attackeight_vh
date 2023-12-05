@@ -668,6 +668,10 @@
             "color": "$knowledge"
           },
           {
+            "text": "When you have multiple Pouches in your inventory, the one in your Curios slot will be prioritized first, followed by left to right across your hotbar, then left to right and top to bottom through your inventory. Keep this in mind when you get to using multiple Pouches\n\n",
+            "color": "$text"
+          },
+          {
             "text": "Pouches can be upgraded with upgrade cards to make them carry more loot, automatically pick up loot when you break a chest, void excess loot and even feed you!\n",
             "color": "$text"
           },
@@ -994,8 +998,7 @@
         ],
         "vaultExp": 0
       }
-    },
-    {
+    },{
       "type": "collection",
       "id": "apply_jewel",
       "name": "Jewels on Tools",
@@ -1074,7 +1077,63 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:chromatic_steel_ingot",
+            "item": "minecraft:glass",
+            "amount": 7
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "jar_pickup",
+      "id": "jar_pickup",
+      "name": "Animal Jar",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\n\nPick up 2 of the same animal in an Animal Jar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_jar",
+      "targetId": "the_vault:any",
+      "targetProgress": 2.0,
+      "unlockedBy": "apply_jewel",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:oak_fence",
+            "amount": 2
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "craft_animal_pen",
+      "name": "Animal Pens",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Animal Pens are a great way to store your jar-ed up animals! Configure me!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPlace an Animal Jar in an Animal Pen",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "jar_pickup",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
             "amount": 4
           }
         ],
@@ -1100,7 +1159,7 @@
       "icon": "the_vault:gui/quests/expertises",
       "targetId": "the_vault:5",
       "targetProgress": 1.0,
-      "unlockedBy": "apply_jewel",
+      "unlockedBy": "craft_animal_pen",
       "reward": {
         "items": [
           {
@@ -2672,12 +2731,61 @@
           {
             "item": "the_vault:inscription_piece",
             "amount": 10
+          },
+          {
+            "item": "the_vault:phoenix_dust",
+            "amount": 8
           }
         ],
         "vaultExp": 0
       }
     },
-    
+    {
+      "type": "anvil",
+      "id": "other_modifiers",
+      "name": "Other Vault Modifiers",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "There are two other vault modifiers you should know about. \n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Soul Flame",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\nA Soul Flame is a fairly inexpensive item, and it will allow you to add the Afterlife modifier to a Vault. This modifier works exactly the same as Beginner's Grace, removing the need to buy back your ghost if you die, but replacing that punishment with a durability penalty should you die. This will also make the Vault Unmodifiable\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Phoenix Feather",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\nThe Phoenix Feather is much more expensive, requiring the Treasure Room exclusive Phoenix Dust. The Phoenix Feather allows an 'Extra Life' to be added to the Vault, acting similar to a Totem of Undying should you die. The Vault will continue, but the Phoenix modifier will be removed in exchange. You can stack 4 Phoenix Feathers on a Crystal.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nApply a Phoenix Feather to a Vault Crystal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/phoenix_feather",
+      "targetId": "the_vault:phoenix_feather",
+      "targetProgress": 1.0,
+      "unlockedBy": "apply_inscription",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_flame",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
     {
       "type": "level_up",
       "id": "reach_level_40",
@@ -2701,7 +2809,7 @@
       "icon": "the_vault:gui/quests/level40",
       "targetId": "the_vault:40",
       "targetProgress": 1.0,
-      "unlockedBy": "apply_inscription",
+      "unlockedBy": "other_modifiers",
       "reward": {
         "items": [
             {
