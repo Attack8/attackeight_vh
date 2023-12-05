@@ -19,7 +19,12 @@ build
 
 # other
 eclipse
-# run
+run/*
+!run/config
+run/config/*
+!run/config/the_vault
+run/config/the_vault/*
+!run/config/the_vault/quest
 
 # Files from Forge MDK
 forge*changelog.txt
