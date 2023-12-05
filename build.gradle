@@ -193,6 +193,9 @@ dependencies {
     implementation fg.deobf("curse.maven:citadel-331936:3783096")
     implementation fg.deobf("curse.maven:create-328085:4550986")
     implementation fg.deobf("curse.maven:cofh-core-69162:4385215")
+    implementation fg.deobf("curse.maven:vault-integrations-867003:4641741")
+    implementation fg.deobf("curse.maven:applied-energistics-2-223794:4136407")
+
 
     if (!Boolean.getBoolean('idea.sync.active')) {
         annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
