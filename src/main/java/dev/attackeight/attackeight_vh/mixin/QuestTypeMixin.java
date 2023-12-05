@@ -43,7 +43,7 @@ public abstract class QuestTypeMixin {
             remap = false,
             cancellable = true)
     private void addJarPickupQuestInBuild(CallbackInfoReturnable<Quest> cir) {
-        AttackeightVHMod.LOGGER.info("a8vh1");
+        //AttackeightVHMod.LOGGER.info("a8vh1");
         if (this.type.equals("jar_pickup")) {
             cir.setReturnValue(new AnimalJarPickupQuest(this.id, this.name, this.descriptionData, this.icon, this.targetId, this.targetProgress, this.unlockedBy, this.reward));
         }
