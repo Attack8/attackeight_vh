@@ -25,6 +25,7 @@ run/config/*
 !run/config/the_vault
 run/config/the_vault/*
 !run/config/the_vault/quest
+mcmodsrepo
 
 # Files from Forge MDK
 forge*changelog.txt
