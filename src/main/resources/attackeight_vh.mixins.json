@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "attackeight_vh.refmap.json",
   "mixins": [
-    "QuestTypeMixin"
+    "QuestTypeMixin",
+    "ForgeGearQuestMixin"
   ]
 }

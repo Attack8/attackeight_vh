@@ -154,7 +154,7 @@
       }
     },
     {
-      "type": "mining",
+      "type": "collection",
       "id": "mine_vault_stone",
       "name": "Vault Stone",
       "descriptionData": {
@@ -219,7 +219,7 @@
         
       },
       "icon": "the_vault:gui/quests/vault_stone",
-      "targetId": "the_vault:vault_stone",
+      "targetId": "the_vault:vault_cobblestone",
       "targetProgress": 16.0,
       "unlockedBy": "find_chromatic_iron",
       "reward": {
@@ -913,7 +913,7 @@
         ]
       },
       "icon": "the_vault:gui/quests/tool",
-      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetId": "the_vault:tool",
       "targetProgress": 1.0,
       "unlockedBy": "tool_station",
       "reward": {
@@ -1403,14 +1403,14 @@
       "name": "Vault Objectives",
       "descriptionData": {
         "description": [
-        {
-          "text": "As you level up, the Vault will adapt and present you with new, more challenging Objectives; these can also be added to your crystal by crafting a Seal and applying it to your crystal in an anvil. \n\nLevel 10 marks the introduction of the Elixir Objective to random vaults.\nLevel 20 marks the introduction of the Scavenger Objective to random vaults.\nLevel 50 marks the introduction of the Hunt The Guardians Objective to random vaults.",
-          "color": "$text"
-        },
-        {
-          "text": "\n\nReach Vault Level 10",
-          "color": "$heal"
-        }
+          {
+            "text": "As you level up, the Vault will adapt and present you with new, more challenging Objectives; these can also be added to your crystal by crafting a Seal and applying it to your crystal in an anvil. \n\nLevel 10 marks the introduction of the Light the Brazier Objective to random vaults.\nLevel 20 marks the introduction of the Scavenger Objective to random vaults.\nLevel 50 marks the introduction of the Hunt The Guardians Objective to random vaults.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nReach Vault Level 10",
+            "color": "$heal"
+          }
         ]
       },
       "icon": "the_vault:gui/quests/ten",
@@ -1420,7 +1420,7 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:crystal_seal_sage"
+            "item": "the_vault:crystal_seal_scout"
           }
         ],
         "vaultExp": 0
@@ -1428,22 +1428,22 @@
     },
     {
       "type": "anvil",
-      "id": "sage_seal",
-      "name": "Elixir Vaults",
+      "id": "scout_seal",
+      "name": "Sealing your crystals",
       "descriptionData": {
         "description": [
-        {
-          "text": "Combining a Vault Crystal and a Seal in an anvil will set the objective on the crystal to that of the Seals, allowing you more control over the type of Objective you are presented. \n\nElixir Vaults function by tasking the player with collecting and submitting an amount of Elixir and awarding the player elixir for each action carried out within the Vault. The Elixir amounts awarded for each action can change every Vault so you may want to note what action awards the most Elixir, visible by the increase of size/quantity of the Elixir orbs.\n\nOnce you have filled your Elixir bar you will need to find and fill a Lodestone to complete the Vault. \n\nIn Co-Op instead of completing the Vault you will then be able to collect Elixir for your friends to help them complete their objective. The Vault completes when all remaining Vaulters have successfully filled their Lodestones! ",
-          "color": "$text"
-        },
-        {
-          "text": "\n\nApply a Seal of the Sage to a Vault Crystal",
-          "color": "$heal"
-        }
+          {
+            "text": "Combining a Vault Crystal and a Seal in an anvil will set the objective on the crystal to that of the Seals, allowing you more control over the type of Objective you are presented. \n\nSeals always need to be applied first to a crystal before modifying the crystal any further! \n\nEmpty seals can be found in completion crates or in the black market.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nApply a Seal of the Scout to a Vault Crystal",
+            "color": "$heal"
+          }
         ]
       },
-      "icon": "the_vault:gui/quests/sage",
-      "targetId": "the_vault:crystal_seal_sage",
+      "icon": "the_vault:gui/quests/scout",
+      "targetId": "the_vault:crystal_seal_scout",
       "targetProgress": 1.0,
       "unlockedBy": "level_ten",
       "reward": {
@@ -1519,7 +1519,7 @@
       "icon": "the_vault:gui/quests/regretorb",
       "targetId": "the_vault:regret_orb",
       "targetProgress": 1.0,
-      "unlockedBy": "sage_seal",
+      "unlockedBy": "scout_seal",
       "reward": {
         "items": [
           {
@@ -1538,7 +1538,31 @@
       "descriptionData": {
         "description": [
           {
-            "text": "Jewels may not always have the perfect size to be utilised to their maximum potential, which is where the Jewel Cutting Station comes into play!\n\nThe Cutting Station takes Silver Scrap and Vault Bronze and gives the player a 50% chance to cut down the size of a jewel randomly between 1 and 10 size. If the cut fails, the jewel will be lowered by one tier' Perfect become Flawless, Flawless become Flawed, Flawed become Chipped and lastly if a Chipped jewel cut fails, the jewel will break and provide the player with a Gemstone and a small amount of Wutodie.\n\nYou may also spec into the Jeweler Expertise which provides the player with up to 3 free cuts without removing an affix!",
+            "text": "Jewels may not always have the perfect size to be utilised to their maximum potential, ",
+            "color": "$text"
+          },
+          {
+            "text": "which is where the Jewel Cutting Station comes into play!\n\nThe Cutting Station takes Silver ",
+            "color": "$text"
+          },
+          {
+            "text": "Scrap and Vault Gold and gives the player a 100% chance to cut down the size of a jewel ",
+            "color": "$text"
+          },
+          {
+            "text": "randomly between 1 and 4 size. This will remove one of the affixes until there is only one ",
+            "color": "$text"
+          },
+          {
+            "text": "left, after this the jewel will break and provide the player with a Gemstone and a small ",
+            "color": "$text"
+          },
+          {
+            "text": "amount of Wutodie.\n\nYou may also spec into the Jeweler Expertise which provides the player with ",
+            "color": "$text"
+          },
+          {
+            "text": "up to 3 free cuts without removing an affix!",
             "color": "$text"
           },
           {
@@ -1701,6 +1725,36 @@
       }
     },
     {
+      "type": "block_interact",
+      "id": "transmog",
+      "name": "Transmogrification",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "The Transmogrification Table allows you to transmog gear pieces to any unlocked transmog you have acquired. Place a gear piece and some bronze to begin viewing transmogs!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract with a Transmogrification Table",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/transmog",
+      "targetId": "the_vault:transmog_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_knowledge_star",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "level_up",
       "id": "reach_level_20",
       "name": "Level 20 Changes",
@@ -1763,7 +1817,7 @@
       "icon": "the_vault:gui/quests/twenty",
       "targetId": "the_vault:20",
       "targetProgress": 1.0,
-      "unlockedBy": "craft_knowledge_star",
+      "unlockedBy": "transmog",
       "reward": {
         "items": [
           {
@@ -2031,6 +2085,118 @@
       }
     },
     {
+      "type": "anvil",
+      "id": "warden",
+      "name": "Warden's Pearl",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "After level 20, while not playing on ",
+            "color": "$text"
+          },
+          {
+            "text": "Casual mode",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", dying in a vault means that you either lose gold by buying back your spirit, or lose items if you don't buy back your spirit.\n\nThis can sometimes be both scary and frustrating; however, if you ever find yourself in a situation where you would like to gain insurance from death before entering a vault, you can check out the ",
+            "color": "$text"
+          },
+          {
+            "text": "Warden's Pearl",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nThis item, when combined with an unmodified vault crystal, will let you keep your inventory if you would die. It does so, while ",
+            "color": "$text"
+          },
+          {
+            "text": "halving the experience gained",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in the vault, which can be positive in case you ever need to catch up!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardens",
+      "targetId": "the_vault:wardens_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "trinkets",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "anvil",
+      "id": "plunderer",
+      "name": "Plunderer's Pearl",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "As you level up the vaults get more difficult, as everything inside a vault scales.\n\nThis can sometimes lead to you falling behind with your gear progression, which can make the vaults more difficult.\n\nIf you find yourself in this situation you can use a ",
+            "color": "$text"
+          },
+          {
+            "text": "Plunderer's Pearl",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "! This pearl can be combined with a Vault Crystal in an anvil to make the vault in to a ",
+            "color": "$text"
+          },
+          {
+            "text": "Plunderer's Vault",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", which ",
+            "color": "$text"
+          },
+          {
+            "text": "removes all experience gain",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", but ",
+            "color": "$text"
+          },
+          {
+            "text": "increase the amount of loot & vault ores",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " slightly!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nApply a Plunderer's Pearl to a Vault Crystal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/plunderer",
+      "targetId": "the_vault:plunderer_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "warden",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "block_interact",
       "id": "dungeons",
       "name": "Dungeons",
@@ -2133,73 +2299,11 @@
       "icon": "the_vault:gui/quests/dungeon_quest",
       "targetId": "the_vault:dungeon_door",
       "targetProgress": 1.0,
-      "unlockedBy": "trinkets",
+      "unlockedBy": "plunderer",
       "reward": {
         "items": [
           {
             "item": "the_vault:gem_pog"
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "anvil",
-      "id": "plunderer",
-      "name": "Plunderer's Pearl",
-      "descriptionData": {
-        "description": [
-          {
-              "text": "As you level up the vaults get more difficult, as everything inside a vault scales.\n\nThis can sometimes lead to you falling behind with your gear progression, which can make the vaults more difficult.\n\nIf you find yourself in this situation you can use a ",
-              "color": "$text"
-          },
-          {
-              "text": "Plunderer's Pearl",
-              "color": "$qhighlight"
-          },
-          {
-              "text": "! This pearl can be combined with a Vault Crystal in an anvil to make the vault in to a ",
-              "color": "$text"
-          },
-          {
-              "text": "Plunderer's Vault",
-              "color": "$qhighlight"
-          },
-          {
-              "text": ", which ",
-              "color": "$text"
-          },
-          {
-              "text": "removes all experience gain",
-              "color": "$qhighlight"
-          },
-          {
-              "text": ", but ",
-              "color": "$text"
-          },
-          {
-              "text": "increase the amount of loot & vault ores",
-              "color": "$qhighlight"
-          },
-          {
-              "text": " slightly!",
-              "color": "$text"
-          },
-          {
-            "text": "\n\nApply a Plunderer's Pearl to a Vault Crystal",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/plunderer",
-      "targetId": "the_vault:plunderer_pearl",
-      "targetProgress": 1.0,
-      "unlockedBy": "dungeons",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_diamond",
-            "amount": 4
           }
         ],
         "vaultExp": 0
@@ -2305,7 +2409,7 @@
       "icon": "the_vault:gui/quests/archives",
       "targetId": "the_vault:alchemy_archive",
       "targetProgress": 1.0,
-      "unlockedBy": "plunderer",
+      "unlockedBy": "dungeons",
       "reward": {
         "items": [
           {
@@ -2334,7 +2438,7 @@
       "icon": "the_vault:gui/quests/modifier",
       "targetId": "the_vault:modifier_workbench",
       "targetProgress": 1.0,
-      "unlockedBy": "archives",
+      "unlockedBy": "dungeons",
       "reward": {
         "items": [
           {
@@ -2403,36 +2507,6 @@
           {
             "item": "the_vault:regret_orb",
             "amount": 10
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "block_interact",
-      "id": "transmog",
-      "name": "Transmogrification",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "The Transmogrification Table allows you to transmog gear pieces to any unlocked transmog you have acquired. Place a gear piece and some bronze to begin viewing transmogs!",
-            "color": "$text"
-          },
-          {
-            "text": "\n\nInteract with a Transmogrification Table",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/transmog",
-      "targetId": "the_vault:transmog_table",
-      "targetProgress": 1.0,
-      "unlockedBy": "skill_altar",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_bronze",
-            "amount": 64
           }
         ],
         "vaultExp": 0
@@ -2529,7 +2603,7 @@
       "icon": "the_vault:gui/quests/catalyst",
       "targetId": "the_vault:vault_catalyst_infused",
       "targetProgress": 1.0,
-      "unlockedBy": "transmog",
+      "unlockedBy": "skill_altar",
       "reward": {
         "items": [
           {
@@ -2579,7 +2653,7 @@
       }
     },
     {
-      "type": "anvil",
+      "type": "crafting",
       "id": "apply_inscription",
       "name": "Architect Vaults: Inscriptions",
       "descriptionData": {
@@ -2663,7 +2737,7 @@
         ]
       },
       "icon": "the_vault:gui/quests/inscription",
-      "targetId": "the_vault:inscription",
+      "targetId": "the_vault:inscription_table",
       "targetProgress": 1.0,
       "unlockedBy": "apply_seal",
       "reward": {
@@ -2671,56 +2745,6 @@
           {
             "item": "the_vault:inscription_piece",
             "amount": 10
-          },
-          {
-            "item": "the_vault:phoenix_dust",
-            "amount": 8
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "anvil",
-      "id": "other_modifiers",
-      "name": "Other Vault Modifiers",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "There are two other vault modifiers you should know about. \n\n",
-            "color": "$text"
-          },
-          {
-            "text": "Soul Flame",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "\nA Soul Flame is a fairly inexpensive item, and it will allow you to add the Afterlife modifier to a Vault. This modifier works exactly the same as Beginner's Grace, removing the need to buy back your ghost if you die, but replacing that punishment with a durability penalty should you die. This will also make the Vault Unmodifiable\n\n",
-            "color": "$text"
-          },
-          {
-            "text": "Phoenix Feather",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "\nThe Phoenix Feather is much more expensive, requiring the Treasure Room exclusive Phoenix Dust. The Phoenix Feather allows an 'Extra Life' to be added to the Vault, acting similar to a Totem of Undying should you die. The Vault will continue, but the Phoenix modifier will be removed in exchange. You can stack 4 Phoenix Feathers on a Crystal.",
-            "color": "$text"
-          },
-          {
-            "text": "\n\nApply a Phoenix Feather to a Vault Crystal",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/phoenix_feather",
-      "targetId": "the_vault:phoenix_feather",
-      "targetProgress": 1.0,
-      "unlockedBy": "apply_inscription",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:soul_flame",
-            "amount": 1
           }
         ],
         "vaultExp": 0
@@ -2749,25 +2773,25 @@
       "icon": "the_vault:gui/quests/level40",
       "targetId": "the_vault:40",
       "targetProgress": 1.0,
-      "unlockedBy": "other_modifiers",
+      "unlockedBy": "apply_inscription",
       "reward": {
         "items": [
-            {
-              "item": "the_vault:gem_echo",
-              "amount": 4
-            },
-            {
-              "item": "the_vault:mod_box",
-              "amount": 2
-            },
-            {
-              "item": "the_vault:sour_orange",
-              "amount": 1
-            },
-            {
-              "item": "minecraft:bamboo",
-              "amount": 12
-            }
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 4
+          },
+          {
+            "item": "the_vault:mod_box",
+            "amount": 2
+          },
+          {
+            "item": "the_vault:sour_orange",
+            "amount": 1
+          },
+          {
+            "item": "minecraft:bamboo",
+            "amount": 12
+          }
         ],
         "vaultExp": 0
       }
@@ -3059,73 +3083,71 @@
       "name": "Divine Paradox: Run Realm",
       "descriptionData": {
         "description": [
-            {
-                "text": "Once you have built a few rooms in your Divine Paradox, it's time to run the vault!\n\nYou can do this only once every ",
-                "color": "$text"
-            },
-            {
-                "text": "20 hours",
-                "color": "$qhighlight"
-            },
-            {
-                "text": ", and since the Divine Paradox is a personal vault, you can not bring your friends.\n\nThe Divine Paradox starts out with ",
-                "color": "$text"
-            },
-            {
-                "text": "10 minutes",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " on the timer, as opposed to the 25 minutes of a regular vault. ",
-                "color": "$text"
-            },
-            {
-                "text": "Relics",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " and ",
-                "color": "$text"
-            },
-            {
-                "text": "Extended Modifiers",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " can increase the time.\n\nThe goal of running your Divine Paradox is to collect ",
-                "color": "$text"
-            },
-            {
-                "text": "Blessings",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " from each god, they appear in chests, coin piles and ores in a room blessed by the corresponding god. Collect the required amount and return to your start room to sacrifice them to the correct god to complete the Divine Paradox!\nThis will be difficult in the beginning, as you may not have enough rooms of each god to complete the vault, however, as you extend your Divine Paradox it becomes easier and easier to complete, and completing it is good, because the gods will always bless you with an ",
-                "color": "$text"
-            },
-            {
-                "text": "Artifact",
-                "color": "$qhighlight"
-            },
-            {
-                "text": "!\n\nOnce you have built a few rooms in the build realm of the Divine Paradox, craft a ",
-                "color": "$text"
-            },
-            {
-                "text": "Seal of the Ordinator",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " and attach it to a crystal in order to gain access to running the Divine Paradox!",
-                "color": "$text"
-            },
-            {
-              "text": "\n\nAttach a Seal of the Ordinator to a Crystal",
-              "color": "$heal"
-            }
-          ]
-      
-        
+          {
+            "text": "Once you have built a few rooms in your Divine Paradox, it's time to run the vault!\n\nYou can do this only once every ",
+            "color": "$text"
+          },
+          {
+            "text": "20 hours",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", and since the Divine Paradox is a personal vault, you can not bring your friends.\n\nThe Divine Paradox starts out with ",
+            "color": "$text"
+          },
+          {
+            "text": "10 minutes",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " on the timer, as opposed to the 25 minutes of a regular vault. ",
+            "color": "$text"
+          },
+          {
+            "text": "Relics",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "Extended Modifiers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " can increase the time.\n\nThe goal of running your Divine Paradox is to collect ",
+            "color": "$text"
+          },
+          {
+            "text": "Blessings",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " from each god, they appear in chests, coin piles and ores in a room blessed by the corresponding god. Collect the required amount and return to your start room to sacrifice them to the correct god to complete the Divine Paradox!\nThis will be difficult in the beginning, as you may not have enough rooms of each god to complete the vault, however, as you extend your Divine Paradox it becomes easier and easier to complete, and completing it is good, because the gods will always bless you with an ",
+            "color": "$text"
+          },
+          {
+            "text": "Artifact",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nOnce you have built a few rooms in the build realm of the Divine Paradox, craft a ",
+            "color": "$text"
+          },
+          {
+            "text": "Seal of the Ordinator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and attach it to a crystal in order to gain access to running the Divine Paradox!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAttach a Seal of the Ordinator to a Crystal",
+            "color": "$heal"
+          }
+        ]
       },
       "icon": "the_vault:gui/quests/quest_paradox_run",
       "targetId": "the_vault:crystal_seal_ordinator_run",
@@ -3151,30 +3173,27 @@
       "name": "Paradoxical Gem",
       "descriptionData": {
         "description": [
-              {
-                  "text": "If you ever feel like you want to ",
-                  "color": "$text"
-              },
-              {
-                  "text": "reset your progress",
-                  "color": "$qhighlight"
-              },
-              {
-                  "text": " of your Divine Paradox, and start over, you can!\n\nYou will need a ",
-                  "color": "$text"
-              },
-              {
-                  "text": "Paradoxical Gem",
-                  "color": "$qhighlight"
-              },
-              {
-                  "text": ". These are extremely expensive, and when combined with a crystal sealed with the Seal of the Ordinator, in an anvil, it will completely nullify your progress, this action can not be undone, so use with great care!\n\nWe will give you a Paradoxical Gem, but be careful when, or if, you use it at all!",
-                  "color": "$text"
-              }
-            ] 
-      
-      
-        
+          {
+            "text": "If you ever feel like you want to ",
+            "color": "$text"
+          },
+          {
+            "text": "reset your progress",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " of your Divine Paradox, and start over, you can!\n\nYou will need a ",
+            "color": "$text"
+          },
+          {
+            "text": "Paradoxical Gem",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". These are extremely expensive, and when combined with a crystal sealed with the Seal of the Creator, in an anvil, it will completely nullify your progress, this action can not be undone, so use with great care!\n\nWe will give you a Paradoxical Gem, but be careful when, or if, you use it at all!",
+            "color": "$text"
+          }
+        ]
       },
       "icon": "the_vault:gui/quests/quest_paradox_reset",
       "targetId": "the_vault:vault_stone",
@@ -3184,6 +3203,58 @@
         "items": [
           {
             "item": "the_vault:paradoxical_gem"
+          },
+          {
+            "item": "the_vault:crystal_seal_cake"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "anvil",
+      "id": "cake_vault",
+      "name": "Cake Vaults!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "The Eat the Cake objective is not randomly occuring, meaning that you will have to apply a seal ",
+            "color": "$text"
+          },
+          {
+            "text": "in order to play it. These seals are not craftable, however, and must be bought from inside a ",
+            "color": "$text"
+          },
+          {
+            "text": "vendoor or the black market.\n\nIn one of these vaults, the rooms generate one-by-one as you eat the cake ",
+            "color": "$text"
+          },
+          {
+            "text": "in each room. The vault gets progressively more lucrative but more challenging.\n\nYou can exit at ",
+            "color": "$text"
+          },
+          {
+            "text": "any time from the Crake Altar in each room, but beware: the completion crake will scale depending ",
+            "color": "$text"
+          },
+          {
+            "text": "on how many cakes you have eaten.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAttach a Seal of the Confectioner to a Crystal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/cake",
+      "targetId": "the_vault:crystal_seal_cake",
+      "targetProgress": 1.0,
+      "unlockedBy": "god_altars",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crake_column"
           }
         ],
         "vaultExp": 0
@@ -3208,7 +3279,7 @@
       "icon": "the_vault:gui/quests/level50",
       "targetId": "the_vault:50",
       "targetProgress": 1.0,
-      "unlockedBy": "paradoxical_gem",
+      "unlockedBy": "god_altars",
       "reward": {
         "items": [
           {
@@ -3327,6 +3398,161 @@
         "items": [
           {
             "item": "the_vault:lost_bounty"
+          },
+          {
+            "item": "the_vault:phoenix_dust",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "anvil",
+      "id": "phoenix_feather",
+      "name": "Phoenix Feathers",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "There is one other vault modifier you should know about. \n",
+            "color": "$text"
+          },
+          {
+            "text": "The Phoenix Feather requires the Treasure Room exclusive Phoenix Dust. The Phoenix Feather ",
+            "color": "$text"
+          },
+          {
+            "text": "allows an 'Extra Life' to be added to the Vault, acting similar to a Totem of Undying should ",
+            "color": "$text"
+          },
+          {
+            "text": "you die. The Vault will continue, but the Phoenix modifier will be removed in exchange. You ",
+            "color": "$text"
+          },
+          {
+            "text": "can stack up to four Phoenix Feathers per Crystal.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nApply a Phoenix Feather to a Vault Crystal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/phoenix_feather",
+      "targetId": "the_vault:phoenix_feather",
+      "targetProgress": 1.0,
+      "unlockedBy": "treasure",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:soul_soil"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "anvil",
+      "id": "soul_flame",
+      "name": "Soul Flames",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Are you ready for your ascension?",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAfter level 65 you are able to play around with and use ",
+            "color": "$text"
+          },
+          {
+            "text": "Soul Flames",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nA ",
+            "color": "$text"
+          },
+          {
+            "text": "Soul Flame",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " is a risk & reward challenge that can be applied to your Vault Crystal, just like a ",
+            "color": "$text"
+          },
+          {
+            "text": "Catalyst",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". The Crystal has to be at least level 65 and have no other modification done to it.\nWhen applied, you add ",
+            "color": "$text"
+          },
+          {
+            "text": "Ascension",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " to your crystal!\n\nIf you complete the vault, you will get your ",
+            "color": "$text"
+          },
+          {
+            "text": "Soul Flame",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " back with a ",
+            "color": "$text"
+          },
+          {
+            "text": "Flame stack",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " on it. Every ",
+            "color": "$text"
+          },
+          {
+            "text": "Flame stack",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " increases the amount of chests, ores, and coins that spawn inside the vault, and also increases the rarity of items, as well as giving you extra XP.\nYou can stack ",
+            "color": "$text"
+          },
+          {
+            "text": "Flames",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " indefinitely, but if you don't complete the vault, you will lose all your progression on your ",
+            "color": "$text"
+          },
+          {
+            "text": "Soul Flame",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and begin again from 0 stacks.\n\nThis is not a mandatory part of the game, but should you choose to participate, we wish you good luck!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nApply a Soul Flame to a Vault Crystal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/flame",
+      "targetId": "the_vault:soul_flame",
+      "targetProgress": 1.0,
+      "unlockedBy": "treasure",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 64
           }
         ],
         "vaultExp": 0

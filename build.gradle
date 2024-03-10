@@ -197,6 +197,7 @@ dependencies {
     implementation fg.deobf("curse.maven:cofh-core-69162:4385215")
     implementation fg.deobf("curse.maven:vault-integrations-867003:4641741")
     implementation fg.deobf("curse.maven:applied-energistics-2-223794:4136407")
+    implementation fg.deobf("curse.maven:modular-routers-250294:4984984")
 
 }
 
