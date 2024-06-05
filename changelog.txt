@@ -4,7 +4,10 @@ Vault Hunters Quest Addon v0.1
  - Add Animal Pen Quest
  - Add Other Vault Modifiers Quest
  - Added to description of Looting Quest
-Vault Hunters Quest Addon v0.1
+Vault Hunters Quest Addon v0.2
  - Update to VH3 U13
  - Allow forge tools quest to accept any tool being crafted
  - Added cake vaults quest
+Vault Hunters Quest Addon v0.3
+ - Update to VH3 U14.1
+ - Added functionality to distinguish between raw vaults and normal vaults in the EnterVaultQuest

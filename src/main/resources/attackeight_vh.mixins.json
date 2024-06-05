@@ -6,6 +6,7 @@
   "refmap": "attackeight_vh.refmap.json",
   "mixins": [
     "QuestTypeMixin",
-    "ForgeGearQuestMixin"
+    "ForgeGearQuestMixin",
+    "EnterVaultQuestMixin"
   ]
 }
